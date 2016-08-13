@@ -1,0 +1,130 @@
+@import "bourbon"
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+	.container 
+		width: 100%
+	.header
+		min-height: 50px
+		display: block
+		margin-bottom: 0
+		&__icons
+			display: block
+		&__logo
+			font-size: 16px
+		&__btn-menu
+			display: inline-block
+		&__phone
+			display: none
+		&__search
+			max-width: 70%
+	.nav
+		margin: 0
+		padding: 0
+		width: 100%
+		display: none
+		&__item
+			display: block
+			float: none
+			&--right
+	.nav-right
+		margin: 6px 0
+	.filter
+		border-bottom: 1px solid darken($color-gray,30%)
+		max-height: 50px
+		width: 100%
+		padding: 15px 0 15px 0
+		&-header
+			display: block
+		&-form
+			background-color: #FFF
+			display: none
+			left: 50%;
+			margin-left: -200px;
+			position: absolute
+			padding: 20px
+			top: 20px
+			width: 360px
+			z-index: 1000
+			&__label
+				margin: 0
+				display: none
+			&__price-input
+				height: 38px
+				text-align: right
+				margin: 0 0 20px 0
+				width: 97%
+			&__input-label
+				padding: 12px
+			&__select
+				height: 38px
+				margin: 0 0 20px 0
+				padding: 0
+				text-align: center
+				width: 100%
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.container
+		width: 100%
+	.header
+		&__icons
+			display: block
+		&__search
+			border-top: 1px solid #FFF
+			display: none
+			max-width: 100%
+			input[type="search"]
+				background: none
+				border: 0
+				margin: 10px 0
+	.nav
+		&__item
+	.catalog
+	&-item
+		border: 0px
+		border-bottom: 1px solid $color-gray
+		max-width: 100%
+		width: 100%
+	/*Disable Animation on Mobile Devices*/
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+	.container
+		min-width: 480px
+		width: 100%
+	.header
+		&__search
+		
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/

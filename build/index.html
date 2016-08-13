@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Технопарк</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <link rel="stylesheet" href="libs/normalize-css/normalize.css">
+    <link rel="stylesheet" href="css/fonts.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <button id="btn-menu" class="header__btn-menu"></button>
+            <div class="header__icons">
+                <i id="btn-search" class="fa fa-search"></i>
+                <i id="btn-search" class="fa fa-shopping-cart"></i>
+            </div>
+            <div class="header__logo">
+                Технопарк
+            </div>
+            <div class="header__phone">
+                8 800 777 50 50
+            </div>
+            <form action="#" id="search-form" class="header__search">
+                <input type="search" placeholder="Поиск товаров">
+            </form>
+            <nav class="nav-right">
+                <a class="nav__item" href="#">Доставка и оплата</a>
+            </nav>
+            <nav id="nav-menu" class="nav">
+                <a href="#" class="nav__item">Мобильные телефоны</a>
+                <a href="#" class="nav__item">Планшеты</a>
+                <a href="#" class="nav__item"><i class="fa fa-camera"></i>Фототехника</a>
+                <a href="#" class="nav__item nav__item--selected">Link 4</a>
+                <a href="#" class="nav__item">Мобильные телефоны</a>
+            </nav>
+            <nav class="nav-right">
+                <a class="nav__item" href="#"><i id="btn-search" class="fa fa-shopping-cart"></i>Корзина</a>
+            </nav>
+        </div>
+    </header>
+<section class="container">
+    <div class="filter">
+        <div class="filter-header">
+            <span class="filter-header__label">Фототехника</span>
+            <i id="filter-form-btn" class="filter__icon filter__icon--right fa fa-sliders"></i>
+        </div>
+        <form id="filter-form" class="filter-form" action="#">
+            <select name="type" id="" class="filter-form__select">
+                <option value="">Lorem ipsum.</option>
+                <option value="">Provident, quaerat.</option>
+                <option value="">Est, laborum.</option>
+                <option value="">Numquam, laborum.</option>
+            </select>
+            <select name="brand" id="" class="filter-form__select">
+                <option value="">Lorem.</option>
+                <option value="">Quo?</option>
+                <option value="">Nobis!</option>
+                <option value="">Dolorem.</option>
+                <option value="">Autem.</option>
+                <option value="">Ipsum!</option>
+                <option value="">Eius.</option>
+            </select>
+            <span class="filter-form__label">По цене</span>
+            <label for="from" class="filter-form__input-label">От</label>
+            <input id="from" type="text" class="filter-form__price-input" value="50">
+            <label for="to" class="filter-form__input-label">До</label>
+            <input id="to" type="text" class="filter-form__price-input" value="2500">
+            <span class="filter-form__label">рублей </span>
+        </form>
+    </div>
+</section>
+<div class="container">
+    <section class="catalog">
+        <div class="catalog-item catalog-item-special">
+            <img src="img/catalog/eos700d1855isstm.png" alt="Canon" class="catalog-item-special__photo">
+            <div class="catalog-item-special__desc">
+                <h4>Canon EOS 700D Kit 18-55 IS STM</h4> Canon EOS 700D — самая новая зеркальная камера в «трехзначной» линейке EOS, ориентированной на новичков в фотографии. Canon EOS 700D — самая новая зеркальная камера в «трехзначной» линейке EOS, ориентированной на новичков в фотографии.
+            </div>
+            <div class="catalog-item__cost--previous">
+                6 900 000 руб
+            </div>
+            <div class="catalog-item-special__cost">
+                6 900 000 руб <i class="fa fa-android"></i>
+            </div>
+        </div>
+        <div class="catalog-item">
+            <img class="catalog-item__photo" src="img/catalog/eos700d1855isstm.png" alt="Canon EOS 700D Kit 18-55 IS STM">
+            <h4>Canon EOS 700D Kit 18-55 IS STM</h4>
+            <div class="catalog-item__desc">
+                Беззеркальная, 20.1 Мп 1.5 crop, с объективом F3 5-5.6 16-150 мм, экран 3" поворотный, WiFi
+            </div>
+            <div class="catalog-item__cost">
+                6 900 000 руб <i class="fa fa-android"></i>
+            </div>
+        </div>
+        <div class="catalog-item">
+            <img class="catalog-item__photo" src="img/catalog/eos700d1855isstm.png" alt="Canon EOS 700D Kit 18-55 IS STM">
+            <h4>Canon EOS 700D Kit 18-55 IS STM</h4>
+            <div class="catalog-item__desc">
+                Canon EOS 700D — самая новая зеркальная камера в «трехзначной» линейке EOS, ориентированной на новичков в фотографии.
+            </div>
+            <div class="catalog-item__cost">
+                6 900 000 руб <i class="fa fa-android"></i>
+            </div>
+        </div>
+        <div class="catalog-item">
+            <img class="catalog-item__photo" src="img/catalog/eos700d1855isstm.png" alt="Canon EOS 700D Kit 18-55 IS STM">
+            <h4>Canon EOS 700D Kit 18-55 IS STM</h4>
+            <div class="catalog-item__desc">
+                Canon EOS 700D — самая новая зеркальная камера в «трехзначной» линейке EOS, ориентированной на новичков в фотографии.
+            </div>
+            <div class="catalog-item__cost">
+                6 900 000 руб <i class="fa fa-android"></i>
+            </div>
+        </div>
+        <div class="catalog-item">
+            <img class="catalog-item__photo" src="img/catalog/eos700d1855isstm.png" alt="Canon EOS 700D Kit 18-55 IS STM">
+            <h4>Canon EOS 700D Kit 18-55 IS STM</h4>
+            <div class="catalog-item__desc">
+                Canon EOS 700D — самая новая зеркальная камера в «трехзначной» линейке EOS, ориентированной на новичков в фотографии.
+            </div>
+            <div class="catalog-item__cost">
+                6 900 000 руб <i class="fa fa-android"></i>
+            </div>
+        </div>
+        <div class="catalog-item">
+            <img class="catalog-item__photo" src="img/catalog/eos700d1855isstm.png" alt="Canon EOS 700D Kit 18-55 IS STM">
+            <h4>Canon EOS 700D Kit 18-55 IS STM</h4>
+            <div class="catalog-item__desc">
+                Canon EOS 700D — самая новая зеркальная камера в «трехзначной» линейке EOS, ориентированной на новичков в фотографии.
+            </div>
+            <div class="catalog-item__cost">
+                6 900 000 руб <i class="fa fa-android"></i>
+            </div>
+        </div>
+        <div class="catalog-item">
+            <img class="catalog-item__photo" src="img/catalog/eos700d1855isstm.png" alt="Canon EOS 700D Kit 18-55 IS STM">
+            <h4>Canon EOS 700D Kit 18-55 IS STM</h4>
+            <div class="catalog-item__desc">
+                Canon EOS 700D — самая новая зеркальная камера в «трехзначной» линейке EOS, ориентированной на новичков в фотографии.
+            </div>
+            <div class="catalog-item__cost">
+                6 900 000 руб <i class="fa fa-android"></i>
+            </div>
+        </div>
+        <div class="catalog-item">
+            <img class="catalog-item__photo" src="img/catalog/eos700d1855isstm.png" alt="Canon EOS 700D Kit 18-55 IS STM">
+            <h4>Canon EOS 700D Kit 18-55 IS STM</h4>
+            <div class="catalog-item__desc">
+                Canon EOS 700D — самая новая зеркальная камера в «трехзначной» линейке EOS, ориентированной на новичков в фотографии.
+            </div>
+            <div class="catalog-item__cost">
+                6 900 000 руб <i class="fa fa-android"></i>
+            </div>
+        </div>
+        <div class="catalog-item">
+            <img class="catalog-item__photo" src="img/catalog/eos700d1855isstm.png" alt="Canon EOS 700D Kit 18-55 IS STM">
+            <h4>Canon EOS 700D Kit 18-55 IS STM</h4>
+            <div class="catalog-item__desc">
+                Canon EOS 700D — самая новая зеркальная камера в «трехзначной» линейке EOS, ориентированной на новичков в фотографии.
+            </div>
+            <div class="catalog-item__cost">
+                6 900 000 руб <i class="fa fa-android"></i>
+            </div>
+        </div>
+        <div class="catalog-item">
+            <img class="catalog-item__photo" src="img/catalog/eos700d1855isstm.png" alt="Canon EOS 700D Kit 18-55 IS STM">
+            <h4>Canon EOS 700D Kit 18-55 IS STM</h4>
+            <div class="catalog-item__desc">
+                Canon EOS 700D — самая новая зеркальная камера в «трехзначной» линейке EOS, ориентированной на новичков в фотографии.
+            </div>
+            <div class="catalog-item__cost">
+                6 900 000 руб <i class="fa fa-android"></i>
+            </div>
+        </div>
+        <div class="catalog-item">
+            <img class="catalog-item__photo" src="img/catalog/eos700d1855isstm.png" alt="Canon EOS 700D Kit 18-55 IS STM">
+            <h4>Canon EOS 700D Kit 18-55 IS STM</h4>
+            <div class="catalog-item__desc">
+                Canon EOS 700D — самая новая зеркальная камера в «трехзначной» линейке EOS, ориентированной на новичков в фотографии.
+            </div>
+            <div class="catalog-item__cost">
+                6 900 000 руб <i class="fa fa-android"></i>
+            </div>
+        </div>
+    </section>
+</div>
+<footer class="container">
+	Copyright
+</footer>
+<div id="dark-bg" class="dark-bg"></div>
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- Load Scripts Start -->
+	<script>var scr = {"scripts":[
+		{"src" : "libs/jquery/dist/jquery.min.js", "async" : false},
+		{"src" : "js/common.js", "async" : false}
+		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+
+	</script>
+	<!-- Load Scripts End -->
+
+</body>
+</html>
