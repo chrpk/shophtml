@@ -32,9 +32,10 @@ body textarea:required:valid
 // Header
 .header
 	background-color: $color-blue
-	margin-bottom: 50px
+	margin-bottom: 30px
 	min-height: 120px
 	width: 100%
+
 	&__btn-menu
 		border: 0
 		background: none
@@ -60,31 +61,33 @@ body textarea:required:valid
 	&__logo
 		color: #444444
 		display: inline-block
-		font-size: 30px
-		padding: 17px 15px 17px 16px
+		font-size: 32px
+		letter-spacing: 0
+		margin: 25px 18px 15px 16px
 		text-transform: uppercase
 	&__phone
 		color: #FFF
 		display: inline-block
-		font-weight: 600
-		margin: -30px 20px 0 20px
+		font-weight: 500
+		font-size: 14px
+		margin: -30px 14px 0 30px
 	&__search
 		display: inline-block
-		max-width: 530px
+		max-width: 520px
 		width: 100%
 		input[type="search"]
 			background-color: rgba(255, 255, 255, 0.0)
 			background-image: url("../img/icons/magnifying-glass.svg")
 			background-repeat: no-repeat
-			background-size: 20px 20px
+			background-size: 15px 15px
 			border: 0	
-			border-bottom: 2px solid #FFF
+			border-bottom: 1px solid #FFF
 			color: #FFF
 			font-size: 14px
 			margin: 0 20px
-			opacity: .5
+			opacity: .8
 			outline: none
-			padding: 4px 10px 10px 30px
+			padding: 1px 10px 10px 28px
 			transition: All 0.25s ease;
 			width: 100%
 			&:hover
@@ -127,7 +130,8 @@ body textarea:required:valid
 .filter
 	color: darken($color-gray,50%)
 	font-size: 14px
-	padding: 0 15px
+	letter-spacing: 0
+	padding: 0 8px
 	text-transform: uppercase
 	&-header
 		padding: 0 20px
@@ -141,54 +145,64 @@ body textarea:required:valid
 			float: right
 	&-form
 		&__input-label
-			color: darken($color-gray,50%)
+			color: darken($color-gray,20%)
 			margin-right: -50px
 			text-transform: uppercase
 		&__label
-				//padding: 0 25px 0px 12px
+				padding: 0 30px 0px 26px
 		&__price-input
-			border: 1px solid darken($color-gray,30%)
+			border: 1px solid darken($color-gray,25%)
 			background-color: rgba(255,255,255,0.0)
-			font-weight: 600
 			height: 38px
-			padding: 0 10px 0 0
+			margin: 0 10.5px
+			padding: 0 20px 0 0
 			text-align: right
+			width: 137px
 		&__select
-			border: 1px solid darken($color-gray,30%)
-			color: darken($color-gray,50%)
+			border: 1px solid darken($color-gray,25%)
+			color: $color-gray
 			font-size: 14px
-			margin: 0 8px
-			padding: 14px
+			margin: 0px 0 0 8px
+			padding: 10px 50px 10px 10px
 			text-transform: uppercase
+			
+			option
+				border: 1px solid $color-gray
 // END FILTER
 // START CATALOG
 .catalog
 	align-items: stretch
-	//padding: 30px 0
 	display: flex
 	justify-content: center
 	flex-direction: row
 	flex-wrap: wrap
+	margin: 45px 0
 	&-item
-		border: 1px solid $color-gray
+		border: 0.5px solid lighten($color-gray,5%)
 		color: darken($color-gray,50%)
-		height: 344px
+		height: 335px
 		padding: 24px 14px
-		flex: 0 0 262px
+		flex: 0 0 262.5px
 		transition: All 0.25s ease
+		h4
+			color: darken($color-gray, 70%)
+			font-size: 18px
+			font-weight: 500
+			letter-spacing: 1px
+			margin: 0
 		&:hover
 			background-color: lighten($color-blue,30%)
 			border: 1px solid lighten($color-blue,10%)
 			cursor: pointer
 		&__cost
-			border-top: 2px solid $color-blue
+			border-top: 1px solid $color-blue
 			color: $color-blue
 			display: inline-block
 			font-size: 16px
-			font-weight: 600
-			margin: 5px 0 0 0
+			font-weight: 500
+			letter-spacing: 1px
 			position: relative
-			padding: 10px 0
+			padding: 12px 0
 			width: 100%
 			&--previous
 				color: darken($color-gray,40%)
@@ -200,19 +214,20 @@ body textarea:required:valid
 			i
 				float: right
 		&__desc
-			font-size: 16px
-			font-weight: 400
+			color: darken($color-gray,30%)
+			margin: 12px 0px 12px 0px
+			font-size: 15px
+			font-weight: 500
 			height: 70px
 			overflow: hidden
-			padding: 0px 0
+			width: 230px
 		&__photo
 			max-width: 160px
 	// Style for special item
 	&-item-special
 		color: darken($color-gray,50%)
-		min-height: 352px
-		flex: 0 1 516px
-		padding: 20px 14px
+		flex: 0 1 555px
+		padding: 24px 14px
 		&:hover
 			border: 1px solid $color-red
 			background-color: lighten($color-red,27%)
@@ -223,20 +238,21 @@ body textarea:required:valid
 			text-align: right
 		&__desc
 			display: inline-block
-			height: 206px
-			overflow: hidden
-			vertical-align: top;
-			width: 240px
+			color: darken($color-gray,30%)
+			margin: 12px 0 8px 0
+			font-size: 15px
+			font-weight: 500
+			height: 240px
+			padding: 0 25px
+			width: 230px
 		&__cost
 			border-top: 1px solid $color-red
 			color: $color-red
 			display: inline-block
 			float: right
-			font-size: 16px
-			font-weight: 600
 			position: relative
-			padding: 15px 0
-			width: 240px
+			padding: 12px 0 0 5px
+			width: 263px
 			i
 				float: right
 .dark-bg
