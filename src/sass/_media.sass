@@ -12,14 +12,18 @@
 		margin-bottom: 0
 		&__icons
 			display: block
+			&--search
+				display: none
 		&__logo
-			font-size: 16px
+			margin: 16px 18px 0 27px
+			font-size: 18px
+			letter-spacing: 1px
 		&__btn-menu
 			display: inline-block
 		&__phone
 			display: none
 		&__search
-			max-width: 70%
+			max-width: 60%
 	.nav
 		margin: 0
 		padding: 0
@@ -77,22 +81,25 @@
 	.header
 		&__icons
 			display: block
+			&--search
+				display: inline-block
 		&__search
 			border-top: 1px solid #FFF
 			display: none
 			max-width: 100%
+			margin: 13px 0 0 0
 			input[type="search"]
 				background: none
 				border: 0
-				margin: 10px 0
+				padding: 16px 0px 16px 0px
 	.nav
 		&__item
 	.catalog
-	&-item
-		border: 0px
-		border-bottom: 1px solid $color-gray
-		max-width: 100%
-		width: 100%
+		&-item
+			border: 0px
+			border-bottom: 1px solid $color-gray
+			flex: 0 0 100%
+			max-width: 400px
 	/*Disable Animation on Mobile Devices*/
 	.animated
 		/*CSS transitions*/
@@ -119,12 +126,5 @@
 @media only screen and (max-width : 480px)
 	/**/
 	.container
-		min-width: 480px
+		min-width: 400px
 		width: 100%
-	.header
-		&__search
-		
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
