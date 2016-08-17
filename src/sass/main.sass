@@ -33,6 +33,7 @@ body textarea:required:valid
 .header
 	background-color: $color-blue
 	margin-bottom: 30px
+	max-width: 100%;
 	min-height: 120px
 	width: 100%
 
@@ -227,7 +228,7 @@ body textarea:required:valid
 	&-item-special
 		color: darken($color-gray,50%)
 		flex: 0 1 555px
-		padding: 25px 14px
+		padding: 20px 14px
 		height: 100%
 		h4
 			float: right
@@ -238,7 +239,7 @@ body textarea:required:valid
 			background-color: lighten($color-red,27%)
 		&__photo
 			display: inline-block
-			padding-right: 20px
+			padding-right: 28px
 			width: 240px
 			text-align: right
 		&__desc
@@ -252,11 +253,15 @@ body textarea:required:valid
 		&__cost
 			font-size: 16px
 			float: right
-			&--special
-				border-top: 1px solid $color-blue
-				color: $color-blue
+			margin: 23px 0 0 0
+			text-decoration: line-through
+			width: 262px
+			&--red
+				border-top: 1px solid $color-red
+				color: $color-red
 				display: inline-block
 				letter-spacing: 1px
+				margin: 15px 0 0 0
 				padding: 12px 0
 				width: 100%
 			i
